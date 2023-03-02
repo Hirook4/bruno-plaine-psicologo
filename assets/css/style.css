@@ -270,52 +270,38 @@ footer {
 
 /* Responsividade */
 
-/* Tablet */
+/* Celular */
 
-@media (min-width: 450px) and (max-width: 800px) {
-  .logo {
-    margin-left: 30px;
-  }
-
-  .menu-opener {
-    display: block;
-    width: 45px;
-    margin-right: 30px;
-  }
-
-  nav {
-    display: none;
-    position: absolute;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 70vw;
-    height: calc(100vh - 100px);
-    top: 100px;
-    right: 0;
-  }
-
-  .menu ul {
+@media (max-width: 480px) {
+  .banner .slidearea {
+    display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
   }
 
-  .menu li a {
-    height: 80px;
-    font-size: 25px;
+  .banner h1 {
+    text-transform: uppercase;
     font-weight: bold;
-    margin-left: 50px;
-    border: 0;
+    font-size: 35px;
   }
 
-  .menu li.active a {
-    border: 0;
-    color: #888c5c;
+  .banner h2 {
+    font-size: 15px;
   }
 
   .section-aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 
   .section-aboutus-left {
+    display: flex;
+    justify-content: center;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -323,10 +309,14 @@ footer {
 
   .section-aboutus-right {
     width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .section-aboutus a {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .section-services {
@@ -334,7 +324,7 @@ footer {
   }
 
   .section-service {
-    min-width: 50%;
+    min-width: 100%;
     margin-bottom: 30px;
   }
 
@@ -342,120 +332,184 @@ footer {
     border-left: 0;
   }
 
-  /* Celular */
+  .section-benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-  @media (max-width: 450px) {
-    .logo {
-      margin-left: 30px;
-    }
+  .section-benefits-left {
+    order: 2;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
-    .menu-opener {
-      display: block;
-      width: 45px;
-      margin-right: 30px;
-    }
+  .section-benefits-left h4 {
+    padding-bottom: 5px;
+  }
 
-    nav {
-      display: none;
-      position: absolute;
-      z-index: 99;
-      background-color: rgba(0, 0, 0, 0.9);
-      width: 78vw;
-      height: calc(100vh - 100px);
-      top: 100px;
-      right: 0;
-    }
+  .section-benefits-left p {
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 10px;
+  }
 
-    .menu ul {
-      flex-direction: column;
-    }
+  .section-benefits-right {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 
-    .menu li a {
-      height: 60px;
-      font-size: 20px;
-      font-weight: bold;
-      margin-left: 30px;
-      border: 0;
-    }
+  .section-benefits-right img {
+    width: 240px;
+    margin: -50px;
+  }
 
-    .menu li.active a {
-      border: 0;
-      color: #888c5c;
-    }
+  .section-benefits-left a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .banner h1 {
-      font-size: 30px;
-    }
+  .footer-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .banner h2 {
-      font-size: 18px;
-    }
+  .area2 {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 
-    .section-aboutus {
-      flex-direction: column;
-    }
+  .area3 {
+    margin-right: 20px;
+  }
+}
 
-    .section-aboutus-left {
-      margin-left: 30px;
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
+/* Tablet */
 
-    .section-aboutus-right {
-      width: auto;
-      margin-left: 30px;
-      margin-right: 30px;
-    }
+@media (min-width: 481px) and (max-width: 1024px) {
+  .banner .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
 
-    .section-aboutus-right img {
-      width: 100%;
-    }
+  .banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+  }
 
-    .section-aboutus a {
-      display: none;
-    }
+  .banner h2 {
+    font-size: 15px;
+  }
 
-    .section-services {
-      flex-wrap: wrap;
-    }
+  .section-aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    .section-service {
-      min-width: 100%;
-      margin-bottom: 30px;
-    }
+  .section-aboutus-left {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 
-    .section-service:first-child {
-      border-left: 0;
-    }
+  .section-aboutus-right {
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
-    .section-projects-filters {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
+  .section-aboutus a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .section-projects-photo {
-      width: 320px;
-    }
+  .section-services {
+    flex-wrap: wrap;
+  }
 
-    .section-projects-photoarea {
-      width: 300px;
-      height: 190px;
-    }
+  .section-service {
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
 
-    .footer-area {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+  .section-service:first-child {
+    border-left: 0;
+  }
 
-    .area2 {
-      margin-top: 20px;
-      margin-left: 20px;
-    }
+  .section-benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    .area3 {
-      margin-right: 20px;
-    }
+  .section-benefits-left {
+    order: 2;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .section-benefits-left h4 {
+    padding-bottom: 5px;
+  }
+
+  .section-benefits-left p {
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 10px;
+  }
+
+  .section-benefits-right {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .section-benefits-right img {
+    width: 240px;
+    margin: -50px;
+  }
+
+  .section-benefits-left a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .area2 {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .area3 {
+    margin-right: 20px;
   }
 }
